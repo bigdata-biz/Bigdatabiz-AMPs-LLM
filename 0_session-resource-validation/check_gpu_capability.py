@@ -3,6 +3,8 @@
 import torch
 import sys
 
+!ldconfig -v
+
 # Check that the CUDA capability of the GPUs in this workspace meet minimum requirements
 version = torch.cuda.get_device_capability()
 if version[0] <= 5:
