@@ -15,8 +15,6 @@ runtimes:
 tasks:
   - type: run_session
     name: Validate GPU Availibility
-    code: |
-      !ldconfig -v
     script: 0_session-resource-validation/check_gpu_resources.py
     short_summary: Check for GPU availibility. 
     long_summary: Check GPUs are enabled on this workspace and are currently schedulable.
@@ -26,9 +24,6 @@ tasks:
   
   - type: run_session
     name: Validate GPU Capability
-    code: |
-      !pip install -q --no-cache-dir torch==2.0.1
-      !ldconfig -v
     script: 0_session-resource-validation/check_gpu_capability.py
     short_summary: Check for GPU capability. 
     long_summary: Check GPU device supports the CUDA capabilities required.
@@ -79,8 +74,6 @@ tasks:
   
   - type: start_application
     name: CML LLM Chatbot
-    code: |
-      !ldconfig -v
     subdomain: cmlllm
     script: 4_app/llm_rag_app.py
     short_summary: Start CML LLM Chatbot application
