@@ -1,3 +1,5 @@
+!ldconfig -v
+
 import os
 import cdsw
 import requests
