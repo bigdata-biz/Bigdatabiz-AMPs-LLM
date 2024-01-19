@@ -27,6 +27,7 @@ tasks:
   - type: run_session
     name: Validate GPU Capability
     code: |
+      !pip install -q --no-cache-dir torch==2.0.1
       !ldconfig -v
     script: 0_session-resource-validation/check_gpu_capability.py
     short_summary: Check for GPU capability. 
