@@ -1,6 +1,3 @@
-!ldconfig -v
-!pip install -q --no-cache-dir torch==2.0.1
-
 import torch
 import sys
 
