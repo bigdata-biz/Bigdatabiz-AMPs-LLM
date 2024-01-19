@@ -1,5 +1,3 @@
-!pip install -q --no-ache-dir torch==2.0.1
-
 import torch
 import sys
 
