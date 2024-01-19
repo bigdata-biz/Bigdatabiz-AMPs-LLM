@@ -28,6 +28,7 @@ tasks:
     name: Validate GPU Capability
     code: |
       !ldconfig -v
+      !pip install -q --no-ache-dir torch==2.0.1
     script: 0_session-resource-validation/check_gpu_capability.py
     short_summary: Check for GPU capability. 
     long_summary: Check GPU device supports the CUDA capabilities required.
