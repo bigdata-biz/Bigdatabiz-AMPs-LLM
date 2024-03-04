@@ -4,7 +4,7 @@ mkdir models
 cd models
 
 # Copy pre downloaded models
-cp -r /tmp/models/eng-sample/* .
+cp -r /root/hyeongyu/models/eng-sample/* .
 
 # Decomp & rm tar files
 tar -xvf ./embedding-model.tar
