@@ -68,9 +68,9 @@ tasks:
   #   environment:
   #     TASK_TYPE: CREATE/RUN_JOB
 
-  - type: run_job
-    entity_label: load_data_and_models
-    short_summary: Run job to load pre-trained models.
+  # - type: run_job
+  #   entity_label: load_data_and_models
+  #   short_summary: Run job to load pre-trained models.
     
   - type: create_job
     name: Populate Vector DB with documents embeddings
