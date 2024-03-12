@@ -29,7 +29,7 @@ def main():
     demo.launch(share=True,
                 show_error=True,
                 server_name='127.0.0.1',
-                server_port=int(os.getenv('CDSW_APP_PORT')))
+                server_port=int(os.getenv('CDSW_READONLY_PORT')))
     print("Gradio app ready")
 # Helper function for generating responses for the QA app
 def get_responses(question):
